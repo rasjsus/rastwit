@@ -3,7 +3,7 @@ Rest App with Golang
 
 # Init a Golang API
 
-`$ go mod init github.com/rasjsus/rastwit.git`
+`$ go mod init github.com/rasjsus/rastwit`
 
 # Dependencies
 
@@ -26,5 +26,5 @@ Rest App with Golang
 `$ docker ps`
 
 # Test endpoints
-`export TOKEN=value` \
-`curl -X POST -H "Content-Type: application/json" -d '{"nam": "linuxize", "email": "linuxize@example.com", "password":"12asdfsdfassdf"}' -H "Authorization: {$TOKEN}" http://localhost:8080/register`
+`$ export TOKEN=value` \
+`$ curl -X POST -H "Content-Type: application/json" -d '{"nam": "linuxize", "email": "linuxize@example.com", "password":"12asdfsdfassdf"}' -H "Authorization: {$TOKEN}" http://localhost:8080/register`
