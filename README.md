@@ -28,3 +28,12 @@ Rest App with Golang
 # Test endpoints
 `$ export TOKEN=value` \
 `$ curl -X POST -H "Content-Type: application/json" -d '{"nam": "linuxize", "email": "linuxize@example.com", "password":"12asdfsdfassdf"}' -H "Authorization: {$TOKEN}" http://localhost:8080/register`
+
+# Connecting Mongo DB Locally
+
+`$ docker exec -it mongojlz bash` \
+`$ mongo -u "mongoadmin" -p "secret" --authenticationDatabase "admin"`
+
+# Creating a user on admin database
+`$ use admin`
+`$ db.createUser({user:"mongoadmin", pwd:"secret", roles:[{role:"root", db:"rastwitdb"}]`

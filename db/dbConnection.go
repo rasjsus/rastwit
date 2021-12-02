@@ -9,7 +9,7 @@ import (
 )
 
 var MongoCNN = ConnectDB()
-var clientOptions = options.Client().ApplyURI("mongodb://mongoadmin:secret@localhost:27017/rastwitdb?authSource=admin")
+var clientOptions = options.Client().ApplyURI("mongodb://mongoadmin:secret@localhost:27017/?authSource=admin")
 
 func ConnectDB() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
