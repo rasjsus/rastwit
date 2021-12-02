@@ -37,3 +37,7 @@ Rest App with Golang
 # Creating a user on admin database
 `$ use admin`
 `$ db.createUser({user:"mongoadmin", pwd:"secret", roles:[{role:"root", db:"rastwitdb"}]`
+
+# Swagger Documentation
+
+Pendiente por desarrollar
