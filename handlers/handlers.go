@@ -33,6 +33,8 @@ func Handlers() {
 
 	router.HandleFunc("/users", middlewares.CheckDB(middlewares.ValidateJWT(routers.GetUsers))).Methods(http.MethodGet) //FAlta testear en postman
 
+	router.HandleFunc("/followertweets", middlewares.CheckDB(middlewares.ValidateJWT(routers.GetFollowersTweets))).Methods(http.MethodGet) //FAlta testear en postman
+
 	PORT := os.Getenv("PORT")
 	if PORT == "" {
 		PORT = "8080"
